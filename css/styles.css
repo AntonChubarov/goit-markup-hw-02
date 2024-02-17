@@ -1,152 +1,217 @@
 :root {
-    --navy-blue: 46, 47, 66;
-    --iris: 77, 90, 229;
-    --cloud: 244, 244, 253;
-    --cornflower: 231, 233, 252;
-    --ocean: 64, 75, 191;
+  --navy-blue: 46, 47, 66;
+  --iris: 77, 90, 229;
+  --cloud: 244, 244, 253;
+  --cornflower: 231, 233, 252;
+  --ocean: 64, 75, 191;
 }
 
 body {
-    max-width: 1440px;
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: rgb(var(--navy-blue));
+  background-color: white;
+  max-width: 1440px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  color: rgb(var(--navy-blue));
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.03em;
-    color: rgb(var(--iris));
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
+  color: rgb(var(--iris));
 }
 
-.logo_accent_dark {
-    color: rgb(var(--navy-blue));
+.logo-accent-dark {
+  color: rgb(var(--navy-blue));
 }
 
-nav {
-    font-weight: 500;
+.nav-list-item {
+  font-weight: 500;
 }
 
-address {
-    font-style: normal;
-    font-weight: 400;
+.nav-list-item:hover {
+  color: rgb(var(--ocean));
+  /*border-bottom: 4px solid rgb(var(--ocean));*/
+}
+
+.nav-list-item-underline {
+  height: 4px;
+  border-radius: 2px;
+}
+
+.nav-list-item:hover .nav-list-item-underline {
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(var(--ocean));
+}
+
+.address-list-item {
+  font-style: normal;
+}
+
+.address-list-item:hover {
+  color: rgb(var(--ocean));
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*region Main Page Styles*/
 
-.order_section {
-    background-color: rgb(var(--navy-blue));
+.order-section {
+  background-color: rgb(var(--navy-blue));
 }
 
 .slogan {
-    color: white;
-    font-size: 56px;
-    line-height: 60px;
-    text-align: center;
+  color: white;
+  font-size: 56px;
+  line-height: 1.07em;
+  font-weight: 700;
+  text-align: center;
 }
 
-.order_service_button {
-    width: 169px;
-    height: 56px;
-    background-color: rgb(var(--iris));
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+.order-service-button {
+  width: 169px;
+  height: 56px;
+  background-color: rgb(var(--iris));
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
-.advantages_list_item {
-    width: 264px;
+.order-service-button:hover {
+  background-color: rgb(var(--ocean));
 }
 
-.advantages_list_item_title {
-    font-size: 20px;
-    font-weight: 500;
+.advantages-list-item {
+  width: 264px;
 }
 
-.section_title{
-    font-size: 36px;
-    line-height: 40px;
-    font-weight: 700;
-    text-align: center;
+.advantages-list-item-title {
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 500;
 }
 
-.team_section {
-    background-color: rgb(var(--cloud));
+.section-title {
+  font-size: 36px;
+  line-height: 1.1em;
+  font-weight: 700;
+  text-align: center;
 }
 
-.team_list_item {
-    width: 264px;
-    box-shadow:
-            0 2px 1px rgba(var(--navy-blue), 0.08),
-            0 1px 1px rgba(var(--navy-blue), 0.16),
-            0 1px 6px rgba(var(--navy-blue), 0.08);
+.team-section {
+  background-color: rgb(var(--cloud));
 }
 
-.team_member_name {
-    font-size: 20px;
-    font-weight: 500;
-    text-align: center;
+.team-list-item {
+  width: 264px;
+  box-shadow:
+    0 2px 1px rgba(var(--navy-blue), 0.08),
+    0 1px 1px rgba(var(--navy-blue), 0.16),
+    0 1px 6px rgba(var(--navy-blue), 0.08);
+  border-radius: 0 0 4px 4px;
 }
 
-.team_member_role {
-    text-align: center;
+.team-member-name {
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.team-member-role {
+  text-align: center;
 }
 
 /*endregion*/
 
 /*region Portfolio Styles*/
 
-.filter_button {
-    width: 116px;
-    height: 48px;
-    background-color: rgb(var(--cloud));
-    color: rgb(var(--iris));
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    border-color: rgb(var(--cornflower));
-    border-width: 1px;
-    border-radius: 4px;
-    border-style: solid;
+.filter-button {
+  width: 116px;
+  height: 48px;
+  background-color: rgb(var(--cloud));
+  color: rgb(var(--iris));
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-color: rgb(var(--cornflower));
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  cursor: pointer;
 }
 
-.filter_button:hover {
-    background-color: rgb(var(--ocean));
-    color: white;
-    border: none;
-    box-shadow:
-            0 2px 2px rgba(0, 0, 0, 0.12),
-            0 2px 1px rgba(0, 0, 0, 0.08);
+.filter-button:hover {
+  background-color: rgb(var(--ocean));
+  color: white;
+  border: none;
+  box-shadow:
+    0 2px 2px rgba(0, 0, 0, 0.12),
+    0 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+.project-list-item {
+  width: 360px;
+  border-color: rgb(var(--cornflower));
+  border-width: 1px;
+  border-style: solid;
+}
+
+.project-list-item:hover {
+  box-shadow:
+    0 2px 1px rgba(var(--navy-blue), 0.08),
+    0 1px 1px rgba(var(--navy-blue), 0.16),
+    0 1px 6px rgba(var(--navy-blue), 0.08);
+}
+
+.project-name {
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 500;
 }
 
 /*endregion*/
 
 footer {
-    background-color: rgb(var(--navy-blue));
+  background-color: rgb(var(--navy-blue));
 }
 
-.logo_accent_light {
-    color: rgb(var(--cloud));
+.logo-accent-light {
+  color: rgb(var(--cloud));
 }
 
-.footer_text {
-    width: 264px;
-    color: rgb(var(--cloud));
-    font-weight: 400;
+.footer-text {
+  width: 264px;
+  color: rgb(var(--cloud));
 }
