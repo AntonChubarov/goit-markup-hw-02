@@ -6,6 +6,7 @@
   --ocean: #404BBF;
   --white-background: #FFFFFF;
   --white-text: #FFFFFF;
+  --slate: #434455;
 }
 
 body {
@@ -44,7 +45,8 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.nav-list-item:hover {
+.nav-list-item:hover,
+.nav-list-item:focus {
   color: var(--ocean);
 }
 
@@ -52,9 +54,11 @@ ul {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
-.address-list-item:hover {
+.address-list-item:hover,
+.address-list-item:focus {
   color: var(--ocean);
 }
 
@@ -97,11 +101,13 @@ ul {
   cursor: pointer;
 }
 
-.order-service-button:hover {
+.order-service-button:hover,
+.order-service-button:focus {
   background-color: var(--ocean);
 }
 
 .advantages-list-item {
+  /*TODO set width and height according to styleguide later*/
 }
 
 .advantages-list-item-title {
@@ -109,6 +115,13 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   font-weight: 500;
+}
+
+.advantages-list-item-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--slate);
 }
 
 .section-title {
@@ -138,6 +151,7 @@ ul {
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 /*endregion*/
@@ -155,7 +169,8 @@ ul {
   cursor: pointer;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--ocean);
   color: var(--white-text);
 }
@@ -164,7 +179,8 @@ ul {
   /*TODO set border according to styleguide*/
 }
 
-.project-list-item:hover {
+.project-list-item:hover,
+.project-list-item:focus {
   /*TODO set shadow according to styleguide*/
 }
 
@@ -178,6 +194,7 @@ ul {
 .project-type {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
 /*endregion*/
