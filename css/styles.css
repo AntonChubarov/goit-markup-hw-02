@@ -27,6 +27,10 @@ ul {
   list-style-type: none;
 }
 
+*:focus {
+  outline: none;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -50,6 +54,10 @@ ul {
   color: var(--ocean);
 }
 
+.nav-list-item-link:focus {
+  color: var(--ocean);
+}
+
 .address-list-item {
   font-style: normal;
   line-height: 1.5;
@@ -59,6 +67,10 @@ ul {
 
 .address-list-item:hover,
 .address-list-item:focus {
+  color: var(--ocean);
+}
+
+.address-list-item-link:focus {
   color: var(--ocean);
 }
 
